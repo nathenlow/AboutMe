@@ -5,14 +5,13 @@
     line-height: 1.5;
 }
 
+
 .header{
     background-color: rgba(0, 0, 0, 0.800);
     padding-bottom: 10px;
 }
-.body{
-    background-color: black;
-    
-}
+
+
 
 a{
     color: white;
@@ -41,33 +40,65 @@ a{
 }
 .navlinks a:hover, a:active {
     background-color: gray;
+  }
+
+.body1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-image: url("images/images02.jpg");
+    background-size: 100%;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative ;
+    background-color: black;
+    
+}
+
+.body1 h1 {
+    font-size: 10vh;
+    color: blue;
+
+}
+
+.body2 {
+    display: block;
+    height: auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 5%;
+    padding-bottom: 10vh;
+    background-color: black;
+}
+.profilepic{
+    display: flex;
+    justify-content: center;
+
+}
+
+.profilepic img {
+    width: 200px;
+    border-radius: 100px;
+    margin-bottom: 40px;
+
+}
+.aboutme{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+
+}
+
+.body2 p{
+    max-width: 50%;
+    text-align: center;
+    color: white;
 }
 
 .title{
-    padding: 100px;
     text-align: center;
-    line-height: 40px;
-    line-height: 1.35em;
-}
-
-li{
-    color: white;
-    text-align: left;
-}
-h3{
-    color: white;
-}
-
-.body{
-    min-height: 75vh;
-    text-align: center;
-    padding-bottom: 10vh;
-}
-.wrapper{
-    display: grid;
-    grid-template-columns: 45% 55%;
-    grid-row-gap: 2rem;
-    grid-auto-rows: minmax(50vw);
 }
 
 
@@ -87,6 +118,45 @@ footer a:link, a:visited {
 }
 
 
+@media (max-width: 1469px) {
+    .body1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        background-image: url("images/images02.jpg");
+        background-size: auto 100%;
+        background-position: bottom;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-color: black;
+        position: relative ;
+    }
+}
+
+
+@media (max-width: 768px){
+    .body1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        background-image: url("images/images02.jpg");
+        background-size: auto 100%;
+        background-position: bottom right;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative ;
+        background-color: black;
+        
+    }
+    .body1 h1 {
+        font-size: 40px;
+        color: blue;
+    
+    }
+
+}
 
 .dropbtn {
     background-color: #3498DB;
@@ -130,24 +200,15 @@ display: block;
 @media(min-width: 480px){
     .dropdown
     {
-        display:none;
+    display:none;
     }
-}
-
-@media (max-width: 768px) {
-    .para {
-        padding-right: 10px;
-    }
-
 }
 
 @media(max-width: 480px){
-    
-    .body{
+    .body1 + .body2{
         min-height: 75vh;
         text-align: center;
         padding-bottom: 4vh;
-        
     }
     .title{
         text-align: center;
@@ -168,21 +229,17 @@ display: block;
         padding-bottom: 0px;
     }
     .title{
-        padding: 25px;
+        padding: 5px;
         
     }
-    .subheader{
-        font-size: 14px;
-        padding-bottom: 10px;
-        text-align: left;
+    .body2{
+        margin-bottom: 0;
     }
-    .wrapper{
-        display: inline-block;
-        width: 80vw;
+    .body2 p{
+        max-width: 80%;
+        text-align: center;
+        color: white;
+        line-height: 1.5;
     }
-    .para{
-        padding-bottom: 2rem;
-    }
-
-
+    
 }

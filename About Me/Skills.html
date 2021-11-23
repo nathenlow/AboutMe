@@ -28,30 +28,52 @@
 				</ul>
 			</div>
 		</nav>
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">Menu</button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="Home.html">Home</a>
+				<a href="Skills.html">Skills</a>
+				<a href="Achievements.html">Achievements</a>
+				<a href="VolunteerExperiences.html">Volunteer Experiences</a>
+				<a href="Leadership.html">Leadership</a>
+			</div>
+		</div>
+		<script>
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			window.onclick = function (event) {
+				if (!event.target.matches('.dropbtn')) {
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
 	</section>
 	<section class="body">
 		<div class="wrapper">
 			<div><img src="images/images03.jpg" alt="Skills"></div>
 			<div>
 				<h1 class="title">Proficiencies</h1>
-				<p class="description">I possess problem-solving skills which allow me to think deeply and creatively. I am a determined student who never gave up despite initial set-backs.</p>
+				<p class="description">I possess problem-solving skills which allow me to think deeply and creatively. I
+					am a determined student who never gave up despite initial set-backs.</p>
 				<h2 class="subtitle">Mathematics</h2>
 				<p>Obtained 1st in class in 2019</p>
 				<h2 class="subtitle">Science</h2>
 				<p>Obtained 2nd in class in 2017</p>
 			</div>
-			
-			
-
-
-
-
-
 
 		</div>
-		
+
 	</section>
-	
+
 
 
 
@@ -61,5 +83,5 @@
 	<a href="https://www.linkedin.com/in/nathen-low-26152b211/" class="fa fa-linkedin" target="_blank"></a>
 	<a href="mailto:s10222101@connect.np.edu.sg" class="fa fa-envelope" target="_blank"></a>
 	<a href="https://wa.me/+6580216263" class="fa fa-whatsapp" target="_blank"></a>
-	
+
 </footer>

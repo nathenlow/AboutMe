@@ -28,28 +28,56 @@
                 </ul>
             </div>
         </nav>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id ="myDropdown" class="dropdown-content">
+                <a href="Home.html">Home</a>
+                <a href="Skills.html">Skills</a>
+                <a href="Achievements.html">Achievements</a>
+                <a href="VolunteerExperiences.html">Volunteer Experiences</a>
+                <a href="Leadership.html">Leadership</a>
+            </div>
+          </div>
+          <script>
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
     </section>
     <section class="body">
         <div class="title">
             <h1>Achievements</h1>
         </div>
         <div class="wrapper">
-            <div>
+            <div class="subheader">
                 <h2>Primary School</h2>
                 <h3>2014-2016</h3>
             </div>
-            <div><ul>
+            <div class="para"><ul>
                 <li>National Primary Schools Soft Volleyball Carnival 2014 Boy Division 2nd</li>
                 <li>South Zone Primary Schools Volleyball Championship 2015 Junior Boys 1st</li>
                 <li>National Primary Schools Volleyball Championships 2015 Junior Boys Division 3rd</li>
                 <li>National School Games South Zone Volleyball Championships 2016 Boys Senior Division 1st</li>
                 <li>National School Games Volleyball Championship 2016 Boys Senior Division 2nd</li>
             </ul></div>
-            <div>
-            <h2>Secondary School</h2>
-            <h3>2017-2020</h3>
+            <div class="subheader">
+                <h2>Secondary School</h2>
+                <h3>2017-2020</h3>
             </div>
-            <div><ul>
+            <div class="para"><ul>
                 <li>Zhenghua Invitation Cup 2017 C Division 1st</li>
                 <li>NSG Volleyball Championships C Division Boys (East Zone) 2017 4th</li>
                 <li>Represented School at NSG Volleyball Championships C Division Boys (National) 2017</li>
