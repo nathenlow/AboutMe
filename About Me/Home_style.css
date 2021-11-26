@@ -205,10 +205,12 @@ display: block;
 }
 
 @media(max-width: 480px){
+    
     .body1 + .body2{
         min-height: 75vh;
         text-align: center;
         padding-bottom: 4vh;
+
     }
     .title{
         text-align: center;
@@ -231,6 +233,12 @@ display: block;
     .title{
         padding: 5px;
         
+    }
+    .body1{
+        background-position: left;
+    }
+    .body1 h1{
+        color: blue;
     }
     .body2{
         margin-bottom: 0;
