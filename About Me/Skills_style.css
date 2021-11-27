@@ -51,10 +51,6 @@ a{
     padding-bottom: 20px;
 }
 
-li{
-    color: white;
-    text-align: left;
-}
 
 
 .body{
@@ -62,6 +58,8 @@ li{
     text-align: left;
     padding-bottom: 10vh;
 }
+
+/*split into two column. one column for pic, the other column for text only*/
 .wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -80,7 +78,9 @@ p {
     padding-bottom: 40px;
 
 }
-.subtitle{
+
+/*positon of subheader*/
+.subheader{
     padding-top: 40px;
     padding-bottom: 10px;
     text-align: left;
@@ -91,10 +91,6 @@ img{
     width: auto; 
     max-width: 50vw;
 }
-
-
-
-
 
 footer {
     display: flex;
@@ -154,10 +150,11 @@ footer a:link, a:visited {
 @media(min-width: 480px){
     .dropdown
     {
-    display:none;
+        display:none;
     }
 }
 
+/*mobile site*/
 @media(max-width: 480px){
     
     .body{
@@ -189,11 +186,12 @@ footer a:link, a:visited {
         padding: 25px;
         
     }
-    .subtitle{
+    .subheader{
         font-size: 14px;
         padding-bottom: 10px;
         text-align: center;
     }
+    /*place it in one column*/
     .wrapper{
         display: inline-block;
         width: 90vw;

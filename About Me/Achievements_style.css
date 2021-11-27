@@ -43,6 +43,7 @@ a{
     background-color: gray;
 }
 
+/*Achievement title position*/
 .title{
     padding: 100px;
     text-align: center;
@@ -50,10 +51,13 @@ a{
     line-height: 1.35em;
 }
 
-li{
+/*achievement list*/
+.para li{
     color: white;
     text-align: left;
 }
+
+/*year colour*/
 h3{
     color: white;
 }
@@ -63,11 +67,13 @@ h3{
     text-align: center;
     padding-bottom: 10vh;
 }
+
+/*create two colummns*/
 .wrapper{
     display: grid;
     grid-template-columns: 45% 55%;
     grid-row-gap: 2rem;
-    grid-auto-rows: minmax(50vw);
+    grid-auto-rows: minmax(auto);
 }
 
 
@@ -127,6 +133,7 @@ display: block;
 
 .show {display: block;}
 
+
 @media(min-width: 480px){
     .dropdown
     {
@@ -134,6 +141,7 @@ display: block;
     }
 }
 
+/*for tablet site*/
 @media (max-width: 768px) {
     .para {
         padding-right: 10px;
@@ -141,6 +149,7 @@ display: block;
 
 }
 
+/*for mobile site*/
 @media(max-width: 480px){
     
     .body{
@@ -149,14 +158,9 @@ display: block;
         padding-bottom: 4vh;
         
     }
-    .title{
-        text-align: center;
-        line-height: 40px;
-        line-height: 1.35em;
-    }
     .navlinks
     {
-    display:none;
+        display:none;
     }
     .defaulthome{
         float: right;
@@ -168,6 +172,9 @@ display: block;
         padding-bottom: 0px;
     }
     .title{
+        text-align: center;
+        line-height: 40px;
+        line-height: 1.35em;
         padding: 25px;
         
     }

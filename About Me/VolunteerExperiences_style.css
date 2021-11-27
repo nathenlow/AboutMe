@@ -50,10 +50,7 @@ a:active {
   line-height: 1.35em;
 }
 
-li {
-  color: white;
-  text-align: left;
-}
+
 h2 {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -71,6 +68,8 @@ p {
   text-align: center;
   padding-bottom: 10vh;
 }
+
+/*splitting pic and text into two column*/
 .wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
