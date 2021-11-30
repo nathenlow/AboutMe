@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>About Me</title>
+	<link href="Home_style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+
+	</style>
+</head>
+
+<body>
+	<section class="header">
+		<!--header-->
+		<div class="defaulthome">
+			<a href="Home.html">Low Yi Rui, Nathen</a>
+		</div>
+		<!--navigation for desktop-->
+		<nav>
+			<div class="navlinks">
+				<ul>
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="Skills.html">Skills</a></li>
+					<li><a href="Achievements.html">Achievements</a></li>
+					<li><a href="VolunteerExperiences.html">Volunteer Experiences</a></li>
+					<li><a href="Leadership.html">Leadership</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!--navigtion for mobile-->
+		<div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id ="myDropdown" class="dropdown-content">
+                <a href="Home.html">Home</a>
+                <a href="Skills.html">Skills</a>
+                <a href="Achievements.html">Achievements</a>
+                <a href="VolunteerExperiences.html">Volunteer Experiences</a>
+                <a href="Leadership.html">Leadership</a>
+            </div>
+        </div>
+		<script>
+			function myFunction() {
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+			
+			window.onclick = function(event) {
+				if (!event.target.matches('.dropbtn')) {
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+        </script>
+	</section>
+	<section class="body">
+		<!--text on image-->
+		<div class="body1"><h1>Hi I am Nathen Low</h1></div>
+		<div class="body2">
+			<!--image of my face for bottom body-->
+			<div class="profilepic">
+				<img src="images/images01.jpg" alt="Nathen's profile">
+			</div>
+			<!--title for bottom body-->
+			<div class="title">
+				<h1>Get To Know Me</h1>
+			</div>
+			<!--description about myself-->
+			<div class="aboutme">
+				<p>I possess a cheerful and easy-going disposition.  I am a creative and hands-on person; novel ideas seem to come naturally upon me, and I love using my hands to put them into action.  I do not back down from challenges, and I tackle them with sheer determination and resilience.  I am a cooperative team player. A testament to my good team spirit would be my role in the school volleyball teams of my primary and secondary schools, as well as the leadership position I had.</p>			
+			</div>
+		</div>
+	</section>
+</body>
+<!--footer links to communicate-->
+<footer>
+	<a href="https://www.linkedin.com/in/nathen-low-26152b211/" class="fa fa-linkedin" target="_blank"></a>
+	<a href="mailto:s10222101@connect.np.edu.sg" class="fa fa-envelope" target="_blank"></a>
+	<a href="https://wa.me/+6580216263" class="fa fa-whatsapp" target="_blank"></a>
+	
+</footer>
