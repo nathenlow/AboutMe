@@ -73,14 +73,17 @@ a:active {
 
 /*bottom body*/
 .body2 {
-  display: inline-block;
+  display: grid;
   height: auto;
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 5%;
   padding-bottom: 10vh;
   background-color: black;
-  
+  text-align: center;
+  grid-template-columns: 100%;
+  grid-auto-rows: minmax(auto);
+  justify-items: center;  
 }
 
 /*to place the image of my face in the center*/
