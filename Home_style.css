@@ -260,10 +260,11 @@ a:visited {
 
 /*for mobile site display*/
 @media (max-width: 480px) {
-  .body1 + .body2 {
+  .body {
     min-height: 75vh;
     text-align: center;
     padding-bottom: 4vh;
+    width: 100vw;
   }
   .title {
     text-align: center;
