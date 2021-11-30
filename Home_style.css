@@ -59,6 +59,7 @@ a:active {
   background-repeat: no-repeat;
   position: relative;
   background-color: black;
+  width: 100%;
 }
 
 .body1 h1 {
