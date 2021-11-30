@@ -32,37 +32,39 @@
 		</nav>
 		<!--navigtion for mobile-->
 		<div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Menu</button>
-            <div id ="myDropdown" class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="Skills.html">Skills</a>
-                <a href="Achievements.html">Achievements</a>
-                <a href="VolunteerExperiences.html">Volunteer Experiences</a>
-                <a href="Leadership.html">Leadership</a>
-            </div>
-        </div>
+			<button onclick="myFunction()" class="dropbtn">Menu</button>
+			<div id="myDropdown" class="dropdown-content">
+				<a href="index.html">Home</a>
+				<a href="Skills.html">Skills</a>
+				<a href="Achievements.html">Achievements</a>
+				<a href="VolunteerExperiences.html">Volunteer Experiences</a>
+				<a href="Leadership.html">Leadership</a>
+			</div>
+		</div>
 		<script>
 			function myFunction() {
 				document.getElementById("myDropdown").classList.toggle("show");
 			}
-			
-			window.onclick = function(event) {
+
+			window.onclick = function (event) {
 				if (!event.target.matches('.dropbtn')) {
 					var dropdowns = document.getElementsByClassName("dropdown-content");
 					var i;
 					for (i = 0; i < dropdowns.length; i++) {
 						var openDropdown = dropdowns[i];
 						if (openDropdown.classList.contains('show')) {
-						openDropdown.classList.remove('show');
+							openDropdown.classList.remove('show');
 						}
 					}
 				}
 			}
-        </script>
+		</script>
 	</section>
 	<section class="body">
 		<!--text on image-->
-		<div class="body1"><h1>Hi I am Nathen Low</h1></div>
+		<div class="body1">
+			<h1>Hi I am Nathen Low</h1>
+		</div>
 		<div class="body2">
 			<!--image of my face for bottom body-->
 			<div class="profilepic">
@@ -74,7 +76,11 @@
 			</div>
 			<!--description about myself-->
 			<div class="aboutme">
-				<p>I possess a cheerful and easy-going disposition.  I am a creative and hands-on person; novel ideas seem to come naturally upon me, and I love using my hands to put them into action.  I do not back down from challenges, and I tackle them with sheer determination and resilience.  I am a cooperative team player. A testament to my good team spirit would be my role in the school volleyball teams of my primary and secondary schools, as well as the leadership position I had.</p>			
+				<p>I possess a cheerful and easy-going disposition. I am a creative and hands-on person; novel ideas
+					seem to come naturally upon me, and I love using my hands to put them into action. I do not back
+					down from challenges, and I tackle them with sheer determination and resilience. I am a cooperative
+					team player. A testament to my good team spirit would be my role in the school volleyball teams of
+					my primary and secondary schools, as well as the leadership position I had.</p>
 			</div>
 		</div>
 	</section>
@@ -84,5 +90,7 @@
 	<a href="https://www.linkedin.com/in/nathen-low-26152b211/" class="fa fa-linkedin" target="_blank"></a>
 	<a href="mailto:s10222101@connect.np.edu.sg" class="fa fa-envelope" target="_blank"></a>
 	<a href="https://wa.me/+6580216263" class="fa fa-whatsapp" target="_blank"></a>
-	
+
 </footer>
+
+</html>
