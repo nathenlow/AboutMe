@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(165, 355, 238);
+    line-height: 1.5;
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.800);
+    padding-bottom: 10px;
+}
+.body{
+    background-color: black;
+    
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.defaulthome{
+    padding-top: 1.5vh;
+    padding-left: 12px;
+    margin-bottom: 2vh;
+}
+.defaulthome a:link, a:visited {
+    font-size: 24px;
+} 
+
+/*display navigation links horizontally*/
+.navlinks li {
+    display: inline;
+    margin: 24px;
+    position: relative;
+    list-style: none;
+}
+
+/*font size setting for navigation links--*/
+.navlinks a:link, a:visited {
+    font-size: 18px;
+        
+}
+
+/*"highlights" when hovering navigation links*/
+.navlinks a:hover, a:active {
+    background-color: gray;
+}
+
+
+.body{
+    min-height: 75vh;
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+/*footer with links for communication*/
+footer {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.800);
+    height: 8vh;
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+footer a:link, a:visited {
+    font-size: 2vh;
+}
+
+
+/*Drop down box for mobile phone navigation*/
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {background-color: #eee;}
+
+.show {display: block;}
+
+
+@media(min-width: 480px){
+    .dropdown
+    {
+        display:none;
+    }
+}
+
+@media(max-width: 480px){
+    
+    .body{
+        min-height: 75vh;
+        text-align: center;
+        padding-bottom: 4vh;
+        
+    }
+    .navlinks
+    {
+        display:none;
+    }
+    .defaulthome{
+        float: right;
+        margin-right: 5vw;
+        margin-bottom: 0;
+    }
+    .header{
+        background-color: rgba(0, 0, 0, 0.800);
+        padding-bottom: 0px;
+    }
+}
