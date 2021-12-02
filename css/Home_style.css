@@ -21,8 +21,7 @@ a {
   padding-left: 12px;
   margin-bottom: 2vh;
 }
-.defaulthome a:link,
-a:visited {
+.defaulthome a:link, a:visited {
   font-size: 24px;
 }
 
