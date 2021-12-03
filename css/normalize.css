@@ -110,7 +110,7 @@ display: block;
 
 .show {display: block;}
 
-
+/*to remove dropdown btn in any devices with width lower 480px*/
 @media(min-width: 480px){
     .dropdown
     {
@@ -118,6 +118,7 @@ display: block;
     }
 }
 
+/*to remove dropdown btn in any devices with width higher than 480px*/
 @media(max-width: 480px){
     
     .body{

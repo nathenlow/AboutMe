@@ -1,4 +1,4 @@
-For those without doccumentation please refer to home page as they are repeated. it is usually the header and footer.
+For those without documentation please refer to index.html and normalize.css as they are repeated. it is usually the header and footer.
 
 Features:
 DESKTOP SITE
