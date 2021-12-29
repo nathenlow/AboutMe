@@ -37,10 +37,16 @@ a{
 
 .navlinks a:link, a:visited {
     font-size: 18px;
+    padding: 0.3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
         
 }
-.navlinks a:hover, a:active {
-    background-color: gray;
+
+.navlinks a:hover,
+a:active {
+  background-color: gray;
+  border-radius: 0.5rem;
 }
 
 .title{
