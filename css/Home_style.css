@@ -228,7 +228,7 @@ a:visited {
     justify-content: center;
     align-items: center;
     height: 70vh;
-    background-image: url("images/images02.jpg");
+    background-image: url("../images/images02.jpg");
     background-size: auto 100%;
     background-position: bottom;
     background-attachment: fixed;
